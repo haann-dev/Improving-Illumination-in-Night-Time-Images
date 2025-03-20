@@ -1,62 +1,58 @@
-# 🌙 Improving Illumination in Night Time Images  
+# **🌙 Improving Illumination in Night Time Images**  
 
-This project enhances **nighttime images** by improving **visibility, contrast, and reducing noise** using advanced image processing techniques. The algorithm leverages **Guided Image Filtering** and **Atmospheric Light Estimation** to restore low-light images effectively.  
+## **📜 Overview**  
+This project enhances nighttime images by improving visibility, contrast, and reducing noise using a dehazing-based algorithm. The program utilizes **Guided Image Filtering** and **Atmospheric Light Estimation** techniques for image enhancement.  
 
-## 🧩 Features  
-- 🌃 **Enhances dark images** by improving brightness and contrast.  
-- 🔍 **Preserves important image details** while reducing noise.  
-- 🎨 **Utilizes image dehazing techniques** for clarity improvement.  
-- ⚡ **Fast processing** with OpenCV and NumPy.  
+## **⚙️ Requirements**  
+Ensure you have the following dependencies installed before running the program:  
+- 🐍 Python 3.x  
+- 📷 OpenCV (`cv2`)  
+- 🔢 NumPy  
+- 🖥️ Tkinter  
 
-## ⚙️ Requirements  
-Make sure you have the following dependencies installed:  
-
+Install dependencies using:  
 ```sh
 pip install opencv-python numpy
 ```
 
-- 🐍 Python 3.x  
-- 📷 OpenCV (`cv2`)  
-- 🔢 NumPy  
-
-## 🚀 Usage  
-To run the program, execute:  
-
-```sh
-python Improving_Illumination.py
-```  
-
-### Steps:  
-1. **📂 Select an image** using the file dialog.  
-2. The script processes and displays:  
+## **🚀 Usage**  
+1. **Run the script**:  
+   ```sh
+   python Improving_Illumination.py
+   ```  
+2. **📂 Select an image** using the file dialog window.  
+3. The program processes the image and displays:  
    - 🏞️ **Original Image**  
    - ✨ **Enhanced Image Versions**  
-3. **Close the windows** when done.  
+4. **Close the windows** to finish execution.  
 
-## 🏗️ Architecture  
-![Architecture](./assets/architecture.png)  
+## **🧠 Algorithm Flow**  
+The enhancement process consists of the following steps:  
+1. **🔦 Illumination Channel Estimation**: Determines the brightest and darkest regions of the image.  
+2. **☀️ Atmospheric Light Estimation**: Identifies the global illumination.  
+3. **🌫️ Transmission Map Estimation**: Computes the transmission factor to correct the image.  
+4. **🎨 Guided Image Filtering**: Smooths the transmission map while preserving edges.  
+5. **🖼️ Final Image Reconstruction**: Restores the image with improved visibility.  
 
-## 🔧 Schematic  
-![Schematic](./assets/schematic.png)  
-
-## 🧠 Logic Flow  
-![Logic Flow](./assets/logic.png)  
-
-## 📊 Example Output  
-### 🖼️ Original vs. Enhanced Image  
+## **📊 Example Output**  
+### 🖼️ **Original vs. Enhanced Image**  
 Original Image | Enhanced Image  
 --- | ---  
-![Original](./assets/original.jpg) | ![Enhanced](./assets/enhanced.jpg)  
+![Original](./assets/original.png) | ![Enhanced](./assets/enhanced.png)  
 
-## 📁 Project Structure  
+## **📁 Project Structure**  
 ```
 📂 Improving_Illumination/
 ├── 📜 Improving_Illumination.py  # Main script
 ├── 📂 assets/                    # Image assets
-│   ├── original.jpg              # Sample input
-│   ├── enhanced.jpg              # Sample output
+│   ├── original.png              # Sample input
+│   ├── enhanced.png              # Sample output
 └── 📜 README.md                  # Documentation
 ```
 
-## 🙏 Acknowledgments  
-This project is inspired by **low-light enhancement** and **image dehazing techniques** used in computer vision research.  
+## **🙏 Acknowledgments**  
+This project is inspired by research on **image dehazing and low-light enhancement techniques**.  
+
+---
+
+Let me know if you'd like any modifications! 🚀
