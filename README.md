@@ -5,7 +5,7 @@ This project enhances nighttime images by improving visibility, contrast, and re
 
 ## **⚙️ Requirements**  
 Ensure you have the following dependencies installed before running the program:  
-- 🐍 Python 3.x  
+- 🐍 Python   
 - 📷 OpenCV (`cv2`)  
 - 🔢 NumPy  
 - 🖥️ Tkinter  
