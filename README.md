@@ -53,6 +53,3 @@ Original Image | Enhanced Image
 ## **🙏 Acknowledgments**  
 This project is inspired by research on **image dehazing and low-light enhancement techniques**.  
 
----
-
-Let me know if you'd like any modifications! 🚀
